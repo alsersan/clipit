@@ -22,3 +22,14 @@ body {
 .bg-secondary {
   background-color: var(--secondary-color);
 }
+
+.latest {
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.latest:after,
+.latest:before {
+  content: " ";
+  display: block;
+  border-bottom: 3px solid #fff;
+}
