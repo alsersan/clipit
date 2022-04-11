@@ -19,7 +19,7 @@
   height: 10px;
   border: solid 1px #fff;
   transform: scale(0) rotate(0deg);
-  animation: cube 8s ease-in forwards infinite;
+  animation: cube 9s ease-in forwards infinite;
 }
 
 .cube:nth-child(2) {
@@ -40,11 +40,21 @@
 .cube:nth-child(5) {
   animation-delay: 4s;
   left: 10%;
-  top: 50%;
+  top: 70%;
 }
 .cube:nth-child(6) {
   animation-delay: 5s;
   left: 50%;
+  top: 10%;
+}
+.cube:nth-child(7) {
+  animation-delay: 6s;
+  left: 90%;
+  top: 90%;
+}
+.cube:nth-child(8) {
+  animation-delay: 7s;
+  left: 10%;
   top: 10%;
 }
 
