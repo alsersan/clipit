@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main-color: #410257;
+  --secondary-color: #a78bfa;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.bg-primary {
+  background-color: var(--main-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
 .bg-secondary {
-  background-color: #410257;
+  background-color: var(--secondary-color);
 }
