@@ -7,7 +7,7 @@
   >
     <div class="flex justify-between items-center pb-4">
       <ng-content select="[heading]"></ng-content>
-      <div class="cursor-pointer" (click)="closeModal.emit()">&#x2715;</div>
+      <div class="cursor-pointer" (click)="closeModal()">&#x2715;</div>
     </div>
     <ng-content></ng-content>
   </div>

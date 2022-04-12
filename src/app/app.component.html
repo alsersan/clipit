@@ -15,7 +15,4 @@
     <app-card></app-card>
   </div>
 </section>
-<app-auth-modal
-  *ngIf="isModalOpen"
-  (closeModal)="closeModal()"
-></app-auth-modal>
+<app-auth-modal *ngIf="this.modalService.isModalOpen()"></app-auth-modal>

@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { ModalService } from '../../services/modal.service';
 
 @Component({
   selector: 'app-modal',
@@ -6,5 +7,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent {
-  @Output() closeModal = new EventEmitter();
+  constructor(private modalService: ModalService) {}
+
+  closeModal() {
+    this.modalService.toggleModal();
+  }
 }
