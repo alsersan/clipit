@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ModalService {
-  private isOpen = true;
+  private isOpen = false;
 
   toggleModal() {
     this.isOpen = !this.isOpen;
