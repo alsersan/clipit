@@ -6,8 +6,9 @@
     class="bg-secondary rounded-lg text-left overflow-hidden shadow-xl py-4 px-6 sm:max-w-lg sm:w-full"
   >
     <div class="flex justify-between items-center pb-4">
-      <p class="text-2xl font-bold">Title</p>
+      <ng-content select="[heading]"></ng-content>
       <div class="cursor-pointer" (click)="closeModal.emit()">&#x2715;</div>
     </div>
+    <ng-content></ng-content>
   </div>
 </div>

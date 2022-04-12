@@ -4,9 +4,8 @@ import { SharedModule } from '../shared/shared.module';
 import { AuthModalComponent } from './auth-modal/auth-modal.component';
 
 @NgModule({
-  declarations: [
-    AuthModalComponent
-  ],
+  declarations: [AuthModalComponent],
   imports: [CommonModule, SharedModule],
+  exports: [AuthModalComponent],
 })
 export class UserModule {}
