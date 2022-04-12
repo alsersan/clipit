@@ -15,4 +15,4 @@
     <app-card></app-card>
   </div>
 </section>
-<app-modal></app-modal>
+<app-modal *ngIf="isModalOpen" (closeModal)="closeModal()"></app-modal>
