@@ -1,8 +1,10 @@
 <div
   class="fixed z-50 inset-0 overflow-y-auto bg-gray-800 bg-opacity-75 flex items-center justify-center"
   id="modal"
+  (click)="closeModal()"
 >
   <div
+    (click)="$event.stopPropagation()"
     class="bg-secondary rounded-lg text-left overflow-hidden shadow-xl py-4 px-6 sm:max-w-lg sm:w-full"
   >
     <div class="flex justify-between items-center pb-4">
