@@ -7,5 +7,6 @@ import { ModalService } from './services/modal.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  isVisible = false;
   constructor(public modalService: ModalService) {}
 }
