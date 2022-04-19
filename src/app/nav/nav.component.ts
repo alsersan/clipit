@@ -13,9 +13,4 @@ export class NavComponent {
     event.preventDefault();
     this.modalService.openModal('auth');
   }
-
-  openModal2(event: Event) {
-    event.preventDefault();
-    this.modalService.openModal('test');
-  }
 }
