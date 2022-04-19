@@ -4,6 +4,7 @@
   id="modal"
   (click)="closeModal()"
 >
+  <!-- stopPropagation so that only clicking outside the modal triggers the click event to close the modal -->
   <div
     (click)="$event.stopPropagation()"
     class="bg-secondary rounded-lg text-left overflow-hidden shadow-xl py-4 px-6 sm:max-w-lg sm:w-full"
