@@ -16,6 +16,16 @@ export class TabContainerComponent implements AfterContentInit {
 
   ngAfterContentInit(): void {
     console.log('after called');
-    this.tabs.map((tab) => console.log(tab.title));
+    // First tab in list will be the active one by default
+    this.tabs.first.isActive = true;
+  }
+
+  setActive(tab: TabComponent) {
+    // Set all tabs to not active
+    this.tabs.forEach((tab) => {
+      tab.isActive = false;
+    });
+    // Set the selected tab to active
+    tab.isActive = true;
   }
 }
