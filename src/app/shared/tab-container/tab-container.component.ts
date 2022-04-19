@@ -16,6 +16,6 @@ export class TabContainerComponent implements AfterContentInit {
 
   ngAfterContentInit(): void {
     console.log('after called');
-    this.tabs.map((tab) => console.log(tab.name));
+    this.tabs.map((tab) => console.log(tab.title));
   }
 }
