@@ -1,1 +1,4 @@
-<p>tab-container works!</p>
+<div *ngFor="let tab of tabs">
+  <p>{{ tab.name }}</p>
+</div>
+<ng-content></ng-content>
