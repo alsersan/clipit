@@ -10,7 +10,7 @@ interface Modal {
   providedIn: 'root',
 })
 export class ModalService {
-  public currentOpenModal = new BehaviorSubject<string>('');
+  private currentOpenModal = new BehaviorSubject<string>('');
 
   openModal(id: string): void {
     this.currentOpenModal.next(id);
