@@ -1,27 +1,52 @@
-<form>
+<form [formGroup]="registerForm">
   <div class="mb-3">
     <label class="inline-block mb-2">Name</label>
-    <input type="text" class="input" placeholder="Enter Name" />
+    <input
+      formControlName="name"
+      type="text"
+      class="input"
+      placeholder="Enter Name"
+    />
   </div>
   <div class="mb-3">
     <label class="inline-block mb-2">Email</label>
-    <input type="email" class="input" placeholder="Enter Email" />
+    <input
+      formControlName="email"
+      type="email"
+      class="input"
+      placeholder="Enter Email"
+    />
   </div>
   <div class="mb-3">
     <label class="inline-block mb-2">Age</label>
-    <input type="number" class="input" />
+    <input formControlName="age" type="number" class="input" />
   </div>
   <div class="mb-3">
     <label class="inline-block mb-2">Password</label>
-    <input type="password" class="input" placeholder="Password" />
+    <input
+      formControlName="password"
+      type="password"
+      class="input"
+      placeholder="Password"
+    />
   </div>
   <div class="mb-3">
     <label class="inline-block mb-2">Confirm Password</label>
-    <input type="password" class="input" placeholder="Confirm Password" />
+    <input
+      formControlName="confirmPassword"
+      type="password"
+      class="input"
+      placeholder="Confirm Password"
+    />
   </div>
   <div class="mb-3">
     <label class="inline-block mb-2">Phone Number</label>
-    <input type="text" class="input" placeholder="Enter Phone Number" />
+    <input
+      formControlName="phoneNumber"
+      type="text"
+      class="input"
+      placeholder="Enter Phone Number"
+    />
   </div>
   <button
     type="submit"
